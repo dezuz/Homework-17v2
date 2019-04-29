@@ -1,4 +1,4 @@
-package com.mateacademy.main;
+package com.mateacademy;
 
 import com.mateacademy.bean.Lyricist;
 import com.mateacademy.configuration.LyricistConfiguration;
