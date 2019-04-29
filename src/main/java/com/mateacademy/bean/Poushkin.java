@@ -1,15 +1,13 @@
-package com.mateacademy;
+package com.mateacademy.bean;
 
 import org.apache.log4j.Logger;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 @Component("LyricistBean1")
-@Scope
-public class Poushkin implements Lyricist{
+public class Poushkin implements Lyricist {
     private static final Logger LOGGER = Logger.getLogger(Poushkin.class);
     private static final String GENERATION_MESSAGE = "I am Poushkin, the writer";
 

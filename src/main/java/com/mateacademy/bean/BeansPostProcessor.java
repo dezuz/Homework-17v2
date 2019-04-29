@@ -1,4 +1,4 @@
-package com.mateacademy;
+package com.mateacademy.bean;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.BeansException;

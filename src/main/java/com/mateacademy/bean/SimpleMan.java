@@ -1,4 +1,4 @@
-package com.mateacademy;
+package com.mateacademy.bean;
 
 import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Scope;
@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-@Component("LyricistBean4")
+@Component("LyricistBean2")
 @Scope("prototype")
-public class Postman implements Lyricist {
-    private static final Logger LOGGER = Logger.getLogger(Postman.class);
-    private static final String GENERATION_MESSAGE = "I am postman";
+public class SimpleMan implements Lyricist {
+    private static final Logger LOGGER = Logger.getLogger(SimpleMan.class);
+    private static final String GENERATION_MESSAGE = "I am simple man";
 
     @Override
     public String generate() {
@@ -20,12 +20,11 @@ public class Postman implements Lyricist {
 
     @PostConstruct
     private void init() {
-        LOGGER.info("Postman is initialized");
+        LOGGER.info("Simple man is initialized");
     }
 
     @PreDestroy
     private void preDestroy() {
-        LOGGER.info("Postman is destroyed");
+        LOGGER.info("Simple man is destroyed");
     }
 }
-

@@ -1,5 +1,7 @@
-package com.mateacademy;
+package com.mateacademy.main;
 
+import com.mateacademy.bean.Lyricist;
+import com.mateacademy.configuration.LyricistConfiguration;
 import org.apache.log4j.Logger;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
